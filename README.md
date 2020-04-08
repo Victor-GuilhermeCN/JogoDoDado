@@ -12,3 +12,10 @@ A feature has been inserted that asks if the user wants to play the dice, always
 
 Update 1.0 - PT-BR
 Foi inserido uma funcionalidade que pergunta se o usuário quer jogar os dados, sempre verificando os tipos de resposta, e tratando-as corretamente para não haver um erro.
+
+Update 2.0 EN
+A simple feature was inserted, asking if the user wants to continue playing.
+
+Update 2.0 - PT-BR
+Foi inserido uma funcionalidade simples, perguntando se o usuário quer continuar a jogar.
+
