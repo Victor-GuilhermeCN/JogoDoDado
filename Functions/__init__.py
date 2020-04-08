@@ -1,7 +1,5 @@
 from random import randint
 # Draw the possible numbers of a common die.
-dice1 = randint(1, 6)
-dice2 = randint(1, 6)
 # Create Lines
 def line():
     print('-' * 50)
@@ -25,7 +23,24 @@ def wannaplay():
             print('You entered an incorrect option... Try again.')
             return wannaplay()
         if option == 'Y':
-            print(f'1º Dice:{dice1} 2º Dice:{dice2}')
+            # Draw the possible numbers of a common dice.
+            print(f'1º Dice:{randint(1, 6)} 2º Dice:{randint(1, 6)}')
+            return wannacontinous()
         else:
             print('Ok, bye bye')
 
+def wannacontinous():
+    try:
+        answer = str(input('Do you wanna roll the dice again? [Y/N]:')).upper().strip()[0]
+    except:
+        print('You entered an incorrect option... Try again.')
+    else:
+        while answer not in 'YN':
+            print('You entered an incorrect option... Try again.')
+            return wannacontinous()
+        if answer == 'Y':
+            return wannaplay()
+        else:
+            while True:
+                print('Ok, bye, bye.')
+                break
