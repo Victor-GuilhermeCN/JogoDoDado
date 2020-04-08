@@ -1,5 +1,4 @@
-from random import randint
+import Functions
 
-c1 = randint(1, 6)
-c2 = randint(1, 6)
-print(f'{c1} {c2}')
+Functions.title('THE DICE')
+Functions.wannaplay()
